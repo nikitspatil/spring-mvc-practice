@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minimal spring-beans.xsd to satisfy editor validation. Only declares the top-level beans element. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.springframework.org/schema/beans"
+           xmlns="http://www.springframework.org/schema/beans"
+           elementFormDefault="qualified">
+
+  <xs:element name="beans">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:anyAttribute processContents="lax"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

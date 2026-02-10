@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minimal spring-mvc.xsd to satisfy editor validation. Declares mvc:annotation-driven element and allows any children. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.springframework.org/schema/mvc"
+           xmlns="http://www.springframework.org/schema/mvc"
+           elementFormDefault="qualified">
+
+  <xs:element name="annotation-driven">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:anyAttribute processContents="lax"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
